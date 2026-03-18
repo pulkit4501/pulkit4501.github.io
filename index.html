@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulkit Agarwal — AI Strategist &amp; Solutions Consultant</title>
+  <meta name="description" content="Pulkit Agarwal — AI Strategist, Solutions Consultant and Technical Scoper based in Singapore.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="c-dot"></div>
+  <div id="c-ring"></div>
+
+  <!-- ─── NAV ─────────────────────────────── -->
+  <nav>
+    <a class="nav-logo" href="#hero">
+      <svg class="nav-logo-mark" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1.5" y="1.5" width="39" height="39" rx="7" stroke="currentColor" stroke-width="1.4" fill="currentColor" fill-opacity="0.08"/>
+        <path d="M8 11L8 31 M8 11L15.5 11C19 11 21 13 21 16C21 19 19 21 15.5 21L8 21" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24 31L29 11L34 31 M25.5 24L32.5 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-logo-text">Pulkit<span class="nav-logo-dot">.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="nav-sl">~/</span>about</a></li>
+      <li><a href="#capabilities"><span class="nav-sl">~/</span>what-i-do</a></li>
+      <li><a href="#resume"><span class="nav-sl">~/</span>experience</a></li>
+      <li><a href="#showcase"><span class="nav-sl">~/</span>showcase</a></li>
+      <li><a href="#contact"><span class="nav-sl">~/</span>contact</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn">&#9728; light</button>
+  </nav>
+
+  <!-- ─── HERO ────────────────────────────── -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Available &middot; Singapore
+      </div>
+      <h1 class="hero-name">Pulkit</h1>
+      <h1 class="hero-name-2">Agarwal.</h1>
+      <div class="hero-role-wrap">
+        <span class="hero-role-prefix">// </span>
+        <div class="hero-role-rotator" id="roleRotator"></div>
+      </div>
+      <p class="hero-line">
+        I speak the language of <strong>machines</strong><br>
+        and the language of <strong>business</strong> &mdash; fluently.<br>
+        Most people pick a side. I never did.
+      </p>
+      <div class="hero-ctas">
+        <a href="#about" class="btn-primary">Read my story &darr;</a>
+        <a href="#contact" class="btn-sec">Let&rsquo;s talk &nearr;</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="code-window">
+        <div class="code-titlebar">
+          <div class="code-dot r"></div>
+          <div class="code-dot y"></div>
+          <div class="code-dot g"></div>
+          <span class="code-filename">pulkit_agarwal.py</span>
+        </div>
+        <div class="code-body" id="codeBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ───────────────────────────── -->
+  <section id="about">
+    <div class="about-split">
+
+      <!-- LEFT: full-height photo panel -->
+      <div class="about-photo-panel">
+        <img src="assets/images/profile.png" alt="Pulkit Agarwal" class="about-photo-img">
+        <div class="about-photo-label">
+          <div class="about-big">WHO<br><span>I AM</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: content panel -->
+      <div class="about-right-panel">
+        <div class="manifesto-opener reveal">
+          I didn&rsquo;t start in tech.<br>
+          I started in <em>numbers</em> &mdash;<br>
+          and that changed everything.
+        </div>
+        <div class="prose-block">
+          <p class="reveal">My path began at Singapore Management University studying <strong>Accountancy</strong> &mdash; not the most obvious route into AI. But that&rsquo;s exactly the point. While most technical consultants think in systems and code, I was trained to think in <strong>risk, ROI, and what a CFO cares about at 3am</strong>. The data analytics second major came later, but the financial lens never left.</p>
+          <div class="quote-block reveal">
+            <p class="quote-text">&ldquo;The people who are crazy enough to think they can change the world are the ones who do.&rdquo;</p>
+            <div class="quote-attr">&mdash; STEVE JOBS</div>
+          </div>
+          <p class="reveal">What drives me is the space between worlds. A defect-rate problem nobody could solve &mdash; until edge AI. A government tender everyone had written off &mdash; until someone could make the technical case in a language procurement committees actually trust.</p>
+          <p class="prose-punch reveal">That gap &mdash; technical reality meets business ambition &mdash; is where I live.</p>
+          <p class="reveal">Outside of work, I try my best to stay sharp and grounded. I&rsquo;ve captained a <strong>basketball team</strong>, trained Muay Thai, picked up chess, and volunteered with Rainbow Centre and Project Yokefellow. Showing up for people &mdash; on and off the court &mdash; is something I take seriously.</p>
+        </div>
+        <div class="inspire-grid reveal">
+          <div class="inspire-cell">
+            <div class="inspire-num">01</div>
+            <div class="inspire-t">The impossible brief</div>
+            <div class="inspire-d">When someone says &ldquo;we&rsquo;ve never seen anyone do this before&rdquo; &mdash; that&rsquo;s when I start taking notes.</div>
+          </div>
+          <div class="inspire-cell">
+            <div class="inspire-num">02</div>
+            <div class="inspire-t">Bridging worlds</div>
+            <div class="inspire-d">The friction between technical truth and business ambition. That&rsquo;s where the best solutions hide.</div>
+          </div>
+          <div class="inspire-cell">
+            <div class="inspire-num">03</div>
+            <div class="inspire-t">Making things real</div>
+            <div class="inspire-d">Not decks. Not demos. Systems that run on factory floors and in airports.</div>
+          </div>
+          <div class="inspire-cell">
+            <div class="inspire-num">04</div>
+            <div class="inspire-t">Thinking across cultures</div>
+            <div class="inspire-d">Having worked across Korea, Indonesia and Vietnam &mdash; context is everything.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── CAPABILITIES ─────────────────────── -->
+  <section id="capabilities">
+    <div class="section-wrap">
+      <div class="cap-header reveal">
+        <div>
+          <div class="sec-label">What I do</div>
+          <div class="sec-title" style="margin-bottom:0">WHAT<br>I DO</div>
+        </div>
+        <p class="cap-sub">Most people pick a side &mdash; business or tech. I never did. Here&rsquo;s what that looks like in practice.</p>
+      </div>
+      <div class="cap-list">
+        <div class="cap-row reveal">
+          <div class="cap-n">01</div>
+          <div class="cap-body">
+            <div class="cap-name">Technical Solutioning &amp; AI Scoping</div>
+            <span class="cap-hook">Most AI proposals don&rsquo;t fail on the technology &mdash; they fail because nobody could explain why it was worth building.</span>
+            <div class="cap-desc">I take a half-formed problem and turn it into a credible, costed, technically sound proposal. From Edge AI to LLM-powered workflows &mdash; I scope what&rsquo;s actually buildable and make the case for it.</div>
+          </div>
+          <div class="cap-tags"><span class="cap-tag">Computer Vision</span><span class="cap-tag">LLMs</span><span class="cap-tag">Edge AI</span><span class="cap-tag">PoC Design</span></div>
+        </div>
+        <div class="cap-row reveal">
+          <div class="cap-n">02</div>
+          <div class="cap-body">
+            <div class="cap-name">Enterprise &amp; Government Tendering</div>
+            <span class="cap-hook">Winning a government tender isn&rsquo;t about having the best technology &mdash; it&rsquo;s about speaking the language of procurement committees.</span>
+            <div class="cap-desc">I&rsquo;ve led bids across Health-tech, Manufacturing, and Tourism &mdash; 55% of them won. Understanding compliance, risk framing, and what a committee needs to feel confident is a skill built over years.</div>
+          </div>
+          <div class="cap-tags"><span class="cap-tag">Tender Writing</span><span class="cap-tag">PDPA/GDPR</span><span class="cap-tag">Gov Procurement</span></div>
+        </div>
+        <div class="cap-row reveal">
+          <div class="cap-n">03</div>
+          <div class="cap-body">
+            <div class="cap-name">ROI Modeling &amp; Business Case Building</div>
+            <span class="cap-hook">Anyone can say &ldquo;AI will improve efficiency.&rdquo; Almost nobody can show the CFO exactly where and by how much.</span>
+            <div class="cap-desc">My Accountancy background means I build the financial story that justifies six-figure investments &mdash; in numbers that hold up to scrutiny in a boardroom.</div>
+          </div>
+          <div class="cap-tags"><span class="cap-tag">ROI Calculators</span><span class="cap-tag">Cost Modelling</span><span class="cap-tag">C-suite Narrative</span></div>
+        </div>
+        <div class="cap-row reveal">
+          <div class="cap-n">04</div>
+          <div class="cap-body">
+            <div class="cap-name">GenAI Strategy &amp; Internal Transformation</div>
+            <span class="cap-hook">A GenAI pilot nobody uses after week two isn&rsquo;t a strategy &mdash; it&rsquo;s a demo.</span>
+            <div class="cap-desc">I&rsquo;ve built internal AI workflows using Claude, Gemini, and AI Studio that measurably changed how teams operate &mdash; embedded, tracked, and actually adopted.</div>
+          </div>
+          <div class="cap-tags"><span class="cap-tag">Claude</span><span class="cap-tag">Gemini</span><span class="cap-tag">Workflow Design</span><span class="cap-tag">Change Mgmt</span></div>
+        </div>
+        <div class="cap-row reveal">
+          <div class="cap-n">05</div>
+          <div class="cap-body">
+            <div class="cap-name">Regional Presales &amp; Market Expansion</div>
+            <span class="cap-hook">Regional expansion isn&rsquo;t just about translation &mdash; it&rsquo;s about trust.</span>
+            <div class="cap-desc">I&rsquo;ve run AI solutioning workshops across East and Southeast Asia, trained presales teams from the ground up, and built the playbooks that opened new markets.</div>
+          </div>
+          <div class="cap-tags"><span class="cap-tag">Korea</span><span class="cap-tag">Indonesia</span><span class="cap-tag">Vietnam</span><span class="cap-tag">Presales Training</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESUME ───────────────────────────── -->
+  <section id="resume">
+    <div class="section-wrap">
+      <div class="sec-label reveal">Experience</div>
+      <div class="sec-title reveal">EXPERIENCE</div>
+      <div class="res-toggle reveal">
+        <button class="res-tab on" id="tabShort" onclick="switchTab('short')">Short form</button>
+        <button class="res-tab" id="tabLong"  onclick="switchTab('long')">Full timeline</button>
+      </div>
+
+      <!-- SHORT FORM -->
+      <div id="res-short">
+        <div class="short-grid reveal">
+          <div class="sc">
+            <div class="sc-ey">Current &middot; Nov 2022 &ndash; Present</div>
+            <div class="sc-role">Senior Technical Solutions Consultant</div>
+            <div class="sc-co">TAGTEAM TECHNOLOGIES (TICTAG)</div>
+            <p class="sc-body">Led end-to-end AI solutioning across enterprise and government &mdash; <strong>55% bid win rate</strong>, <strong>S$1.2M pipeline</strong>, 65%+ PoC-to-contract conversion. Built GenAI workflows in Claude &amp; Gemini driving a <strong>25% productivity lift</strong>. Ran AI workshops across Korea, Indonesia &amp; Vietnam.</p>
+          </div>
+          <div class="sc">
+            <div class="sc-ey">Internship &middot; May &ndash; Oct 2022</div>
+            <div class="sc-role">Technical Ops &amp; Project Management Intern</div>
+            <div class="sc-co">TAGTEAM TECHNOLOGIES (TICTAG)</div>
+            <p class="sc-body">Built Python automation hitting <strong>99.5% accuracy</strong>, cutting processing time 40%. Reduced project turnaround from 14 days to 8 &mdash; <strong>80% client retention</strong> maintained.</p>
+          </div>
+          <div class="sc">
+            <div class="sc-ey">Part-time &middot; Sep 2021 &ndash; Apr 2022</div>
+            <div class="sc-role">Research Assistant</div>
+            <div class="sc-co">SINGAPORE MANAGEMENT UNIVERSITY</div>
+            <p class="sc-body">Analysed <strong>500+ datasets</strong> to surface human behaviour trends. Automated broadcast workflows via Power Automate, cutting manual effort by <strong>80%</strong>.</p>
+          </div>
+          <div class="sc">
+            <div class="sc-ey">Education &middot; 2019 &ndash; 2023</div>
+            <div class="sc-role">B.Acc &middot; 2nd Major: Data Analytics</div>
+            <div class="sc-co">SINGAPORE MANAGEMENT UNIVERSITY</div>
+            <p class="sc-body">Four years at the intersection of <strong>financial thinking</strong> and <strong>data science</strong>. Deliberate: understand what is valuable, and how to build what creates it.</p>
+          </div>
+        </div>
+        <div class="dl-strip reveal">
+          <p>Want the full picture? Download my CV as a PDF.</p>
+          <a href="assets/docs/cv.pdf" class="btn-primary" target="_blank">Download CV &darr;</a>
+        </div>
+      </div>
+
+      <!-- FULL TIMELINE -->
+      <div id="res-long" style="display:none">
+        <div class="exp-row reveal">
+          <div class="exp-left">
+            <div class="exp-period">Nov 2022<br>&mdash; Present</div>
+            <div class="exp-co">Tagteam Technologies</div>
+            <div class="exp-loc">Singapore</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-title">Senior Technical Solutions Consultant</div>
+            <ul class="exp-bullets">
+              <li><span>Secured <strong>S$1.2M in total revenue</strong> leading technical scoping across Health-tech, Manufacturing, and Tourism &mdash; 55% bid win rate.</span></li>
+              <li><span>Directed <strong>Computer Vision on NVIDIA Jetson (Edge AI)</strong> for aviation client, solving defect detection at 60km/h from 30m.</span></li>
+              <li><span>Converted <strong>65% of 12+ PoCs into long-term contracts</strong> using Python, GCP, AWS. Won 4 Open Innovation Platform challenges.</span></li>
+              <li><span>Architected <strong>GenAI workflows</strong> (Claude, Gemini, AI Studio) tracking 25% team productivity increase via Jira.</span></li>
+              <li><span>Led <strong>AI solutioning workshops in South Korea</strong>, trained presales teams across Indonesia and Vietnam, 40% market penetration increase.</span></li>
+              <li><span>Built <strong>ROI calculators and pricing models</strong> justifying six-figure investments to C-suite.</span></li>
+              <li><span>Reduced lead-to-PoC conversion by <strong>76%</strong> and tender preparation time by 40%.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-row reveal">
+          <div class="exp-left">
+            <div class="exp-period">May 2022<br>&mdash; Oct 2022</div>
+            <div class="exp-co">Tagteam Technologies</div>
+            <div class="exp-loc">Singapore</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-title">Technical Ops &amp; PM Intern</div>
+            <ul class="exp-bullets">
+              <li><span>Built Python automation achieving <strong>99.5% accuracy</strong>, reducing processing time 40%.</span></li>
+              <li><span>Cut project turnaround from 2 weeks to 8 days &mdash; <strong>80% customer retention</strong>.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-row reveal">
+          <div class="exp-left">
+            <div class="exp-period">Sep 2021<br>&mdash; Apr 2022</div>
+            <div class="exp-co">SMU</div>
+            <div class="exp-loc">Singapore</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-title">Research Assistant</div>
+            <ul class="exp-bullets">
+              <li><span>Analysed <strong>500+ datasets</strong>, improving decision accuracy 30%.</span></li>
+              <li><span>Automated broadcasting via Power Automate &mdash; <strong>80% reduction</strong> in manual effort.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-edu reveal">
+          <div>
+            <div class="exp-edu-title">Bachelor of Accountancy &middot; Second Major in Data Analytics</div>
+            <div class="exp-edu-sub">Singapore Management University &middot; 2019 &ndash; 2023</div>
+          </div>
+          <div class="exp-edu-yr">2023</div>
+        </div>
+        <div class="dl-strip reveal">
+          <p>Want the full document? Download my CV.</p>
+          <a href="assets/docs/cv.pdf" class="btn-primary" target="_blank">Download CV &darr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SHOWCASE ─────────────────────────── -->
+  <section id="showcase">
+    <div class="section-wrap">
+      <div class="showcase-header">
+        <div>
+          <div class="sec-label reveal">Showcase</div>
+          <div class="sec-title reveal" style="margin-bottom:0">SOLUTIONED.<br>PITCHED.<br>WON.</div>
+        </div>
+        <p class="reveal showcase-sub">From factory floors to government stages &mdash; moments that prove the work.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <a class="gc" href="https://www.linkedin.com/in/pulkit4501" target="_blank" rel="noopener">
+          <img src="assets/images/imda-showcase.png" alt="IMDA Digital Tech Sharing" class="gimg">
+          <div class="gi">
+            <div class="gi-t">IMDA Digital Tech Sharing</div>
+            <div class="gi-s">Representing TicTag &middot; Showcasing AI Solutions at IMDA</div>
+            <div class="gi-link">View on LinkedIn &nearr;</div>
+          </div>
+        </a>
+        <a class="gc" href="https://www.linkedin.com/in/pulkit4501" target="_blank" rel="noopener">
+          <img src="assets/images/vietnam-pitch.png" alt="Inno Vietnam-Japan Pitch" class="gimg">
+          <div class="gi">
+            <div class="gi-t">Inno Vietnam&ndash;Japan Fast Track Pitch</div>
+            <div class="gi-s">Hanoi &middot; Won deal with major Vietnamese MNC</div>
+            <div class="gi-link">View on LinkedIn &nearr;</div>
+          </div>
+        </a>
+        <a class="gc" href="https://www.linkedin.com/in/pulkit4501" target="_blank" rel="noopener">
+          <img src="assets/images/malaysia-pitch.png" alt="Malaysia Centre4IR Pitch" class="gimg">
+          <div class="gi">
+            <div class="gi-t">Malaysia Centre4IR Pitch Competition</div>
+            <div class="gi-s">Malaysia &middot; Regional AI Solutioning</div>
+            <div class="gi-link">View on LinkedIn &nearr;</div>
+          </div>
+        </a>
+        <a class="gc" href="https://www.linkedin.com/in/pulkit4501" target="_blank" rel="noopener">
+          <img src="assets/images/oip-winner.png" alt="OIP Challenge Winner" class="gimg">
+          <div class="gi">
+            <div class="gi-t">Open Innovation Platform Winner</div>
+            <div class="gi-s">Awarded alongside ARTC &middot; Manufacturing Innovation</div>
+            <div class="gi-link">View on LinkedIn &nearr;</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ──────────────────────────── -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="contact-hl reveal">Let&rsquo;s build<br>something <span>real.</span></div>
+      <p class="contact-sub reveal">If you&rsquo;re working on something ambitious and need someone who can hold the technical and business conversation at the same time &mdash; I want to hear about it.</p>
+      <div class="contact-grid">
+        <div class="c-links reveal">
+          <a href="mailto:hipulkit4501@gmail.com" class="c-row">
+            <div class="c-left"><div class="c-type">Email</div><div class="c-val">hipulkit4501@gmail.com</div></div>
+            <div class="c-arr">&#8599;</div>
+          </a>
+          <a href="tel:+6598955581" class="c-row">
+            <div class="c-left"><div class="c-type">Phone &middot; Singapore</div><div class="c-val">+65 9895 5581</div></div>
+            <div class="c-arr">&#8599;</div>
+          </a>
+          <a href="https://www.linkedin.com/in/pulkit4501" target="_blank" rel="noopener" class="c-row">
+            <div class="c-left"><div class="c-type">LinkedIn</div><div class="c-val">linkedin.com/in/pulkit4501</div></div>
+            <div class="c-arr">&#8599;</div>
+          </a>
+        </div>
+        <div class="contact-terminal reveal">
+          <div class="ct-bar">
+            <div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div>
+            <span class="code-filename">status.sh</span>
+          </div>
+          <div class="ct-body">
+            <div class="ct-line"><span class="ct-prompt">$</span> whoami</div>
+            <div class="ct-line ct-out">pulkit_agarwal</div>
+            <div class="ct-spacer"></div>
+            <div class="ct-line"><span class="ct-prompt">$</span> open_to_work --check</div>
+            <div class="ct-line ct-out ct-green">&#10003; actively looking</div>
+            <div class="ct-spacer"></div>
+            <div class="ct-line"><span class="ct-prompt">$</span> preferred_role</div>
+            <div class="ct-line ct-out">Solutions Consultant / AI Strategy</div>
+            <div class="ct-spacer"></div>
+            <div class="ct-line"><span class="ct-prompt">$</span> location --current</div>
+            <div class="ct-line ct-out">Singapore (open to regional)</div>
+            <div class="ct-spacer"></div>
+            <div class="ct-line"><span class="ct-prompt">$</span> reach_out --now<span class="code-cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────── -->
+  <footer>
+    <div class="f-copy">&copy; 2026 Pulkit Agarwal &middot; Singapore &nbsp;&mdash;&nbsp; <span class="f-tag">speak machine, speak business.</span></div>
+    <a href="#hero" class="f-top">&#8593; back to top</a>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lb" onclick="closeLb()">
+    <img id="lb-img" alt="">
+    <button class="lb-x" onclick="closeLb()">&#10005;</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
