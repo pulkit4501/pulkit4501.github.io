@@ -30,7 +30,7 @@ A personal portfolio website built with pure HTML, CSS, and JavaScript. Designed
 ├── .gitignore
 ├── .nojekyll               ← Tells GitHub Pages to skip Jekyll
 ├── README.md
-└── DEPLOY.md               ← Hosting guide
+
 ```
 
 ## ✏️ Customization
