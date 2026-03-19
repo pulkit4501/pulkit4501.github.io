@@ -2,9 +2,6 @@
 
 A personal portfolio website built with pure HTML, CSS, and JavaScript. Designed with a modern cyber-tech aesthetic featuring glassmorphism navigation, scroll-reveal animations, particle network backgrounds, and responsive design across all device sizes.
 
-## 🚀 Live Demo
-
-> **[https://pulkit4501.github.io](https://pulkit4501.github.io)** *(update after deployment)*
 
 ## 🛠 Tech Stack
 
@@ -71,9 +68,6 @@ In `index.html`, add new `<a class="gc">` cards inside the `.gallery` div. Each 
 | `≤ 768px` | Narrow tablets |
 | `≤ 480px` | Phones |
 
-## 🌐 Deployment
-
-See **[DEPLOY.md](DEPLOY.md)** for step-by-step GitHub Pages hosting instructions.
 
 ## 📄 License
 
