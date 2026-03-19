@@ -22,18 +22,55 @@ document.addEventListener('mousemove', e => {
   requestAnimationFrame(cursorLoop);
 })();
 
-/* ── NAV SCROLL — glassmorphism on scroll ── */
+/* ── NAV SCROLL — glassmorphism + progress + breadcrumb ── */
 const navEl = document.querySelector('nav');
-let lastScroll = 0;
+const progressBar = document.getElementById('nav-progress');
+const breadcrumbEl = document.getElementById('nav-breadcrumb');
+
+const sectionLabelMap = {
+  about: 'about',
+  capabilities: 'what-i-do',
+  resume: 'experience',
+  showcase: 'showcase',
+  contact: 'contact',
+};
+
 window.addEventListener('scroll', () => {
   const y = window.scrollY;
-  if (y > 60) {
-    navEl.classList.add('scrolled');
-  } else {
-    navEl.classList.remove('scrolled');
+
+  // Scrolled pill
+  navEl.classList.toggle('scrolled', y > 60);
+
+  // Progress bar
+  const docH = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = docH > 0 ? (y / docH * 100) + '%' : '0%';
+
+  // Breadcrumb visibility
+  if (y <= 60) {
+    breadcrumbEl.classList.remove('visible');
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
   }
-  lastScroll = y;
 }, { passive: true });
+
+/* ── ACTIVE SECTION TRACKING ─────────────── */
+const navLinks = document.querySelectorAll('.nav-links a[data-section]');
+
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const id = entry.target.id;
+    navLinks.forEach(a => a.classList.toggle('active', a.dataset.section === id));
+    if (window.scrollY > 60 && sectionLabelMap[id]) {
+      breadcrumbEl.textContent = '/ ' + sectionLabelMap[id];
+      breadcrumbEl.classList.add('visible');
+    }
+  });
+}, { rootMargin: '-25% 0px -65% 0px' });
+
+['about', 'capabilities', 'resume', 'showcase', 'contact'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) sectionObserver.observe(el);
+});
 
 /* ── HERO CANVAS — particle network ─────── */
 (function heroCanvas() {
